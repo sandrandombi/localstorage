@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <h1>localStorage</h1>
+
+    <script>
+        // localStorage.setItem("prenom", "Sandra")
+        // localStorage.setItem("nom", "nd")
+        // console.log(localStorage.getItem("nom"))
+        // localStorage.removeItem("nom")
+        // localStorage.clear();
+
+        // let maListe = [ "pomme", "banane", "abricot", "ananas"]
+        // console.log(maListe)
+        // // console.log(maListe[2])
+        // // console.log(maListe[maListe.length-1])
+        // localStorage.setItem("array", maListe)
+        // console.log(localStorage.getItem("array"))
+        // localStorage.setItem("newArray", JSON.stringify (maListe));
+        // let newList = localStorage.getItem("newArray")
+        // console.log(JSON.parse(newList))
+        // for(let item of maListe) {
+        //     console.log(item)
+        // }
+        // // for (let i=0; i<maListe.length; i++) {
+        // //     console.log(maListe[i])
+        // // }
+        // console.log(maListe.sort());
+        // console.log(maListe.reverse());
+        // console.log(maListe.indexOf("ananas"));
+        // let index = maListe.indexOf("ananas");
+        // console.log(maListe.splice(index,1));
+        // console.log(maListe);
+        // console.log(maListe.find(element => element === "abricot"));
+        // if(maListe.find(element => element === "pomme")){
+        //     console.log("Element existe déjà")
+        // }else {
+        //     console.log("Ajout d'un nouveau élément")
+        // }
+//  déclare un tableau---------------------------------
+let maListe = ["pomme","banane","abricot","ananas"];
+console.log(maListe);
+// ajoute à la fin du tableau------------------------------
+maListe.push("prune");
+console.log(maListe);
+// ajouter un fruit au début du tableau---------------------
+maListe.unshift("pastèque");
+console.log(maListe);
+// supprime le premier mot---------------------------------
+maListe.shift()
+console.log(maListe);
+// qui supprime le dernier mot du tableau-------------------
+maListe.pop();
+console.log(maListe);
+// pour récuperer l'index d'un element-----------------------
+let index = maListe.indexOf("abricot");
+console.log(index);
+// pour supprimer un élement spécifique du tableau------------
+maListe.splice(index,1);
+console.log(maListe);
+
+    </script>
+</body>
+</html>
